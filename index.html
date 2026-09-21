@@ -28,7 +28,7 @@ footer{background:#041222;color:#b8c7d6;padding:32px 0}.foot{display:flex;justif
 <nav><div class="container navin">
 <a class="brand" href="#home"><div class="logo">A</div><div><b>AADI LOGISTICS</b><span>Global Import & Export Solutions • ALL INDIA</span></div></a>
 <ul class="links"><li><a href="#home">Home</a></li><li><a href="#products">Products</a></li><li><a href="#markets">Markets</a></li><li><a href="#about">About Us</a></li><li><a href="#why">Why Choose Us</a></li><li><a href="#contact">Contact</a></li></ul>
-<a class="navcta" href="#contact">WhatsApp Us</a><button class="menu" onclick="alert('Use the menu links below the page on mobile.')">☰</button>
+<a class="navcta" href="https://api.whatsapp.com/send?phone=919798602070" target="_blank" rel="noopener noreferrer">WhatsApp Us</a><button class="menu" onclick="alert('Use the menu links below the page on mobile.')">☰</button>
 </div></nav>
 
 <main id="home">
@@ -60,7 +60,7 @@ footer{background:#041222;color:#b8c7d6;padding:32px 0}.foot{display:flex;justif
 <section id="why"><div class="container"><div class="sectionhead"><div class="eyebrow">WHY AADI</div><h2>Why Choose Us</h2></div><div class="twocol"><div class="panel"><ul class="ticks"><li>Wide product-category coverage</li><li>India-focused market support</li><li>Clear enquiry and quotation process</li></ul></div><div class="panel"><ul class="ticks"><li>Responsive customer communication</li><li>Product and packaging discussed before order</li><li>Trade requirements reviewed case-by-case</li></ul></div></div></div></section>
 
 <section id="contact" class="about"><div class="container"><div class="sectionhead"><div class="eyebrow">GET IN TOUCH</div><h2>Send an Enquiry</h2></div><div class="contactgrid">
-<div class="contactbox"><h3>Contact AADI LOGISTICS</h3><div class="contactitem">☎ <b>9798602070</b></div><div class="contactitem">💬 <a href="https://wa.me/9798602070">WhatsApp: +9798602070</a></div><div class="contactitem">✉ Email: <b>aadilogistics9798.com</b><br><small>Please replace with the correct email address before publishing.</small></div><div class="contactitem">📍 Harola, Sector 5, Noida</div></div>
+<div class="contactbox"><h3>Contact AADI LOGISTICS</h3><div class="contactitem">☎ <b>9798602070</b></div><div class="contactitem">💬 <a href="https://api.whatsapp.com/send?phone=919798602070">WhatsApp: +91 9798602070</a></div><div class="contactitem">✉ Email: <b>aadilogistics9798.com</b><br><small>Please replace with the correct email address before publishing.</small></div><div class="contactitem">📍 Harola, Sector 5, Noida</div></div>
 <form class="form" onsubmit="sendEnquiry(event)"><div class="formgrid"><input id="name" required placeholder="Full Name"><input id="email" type="email" required placeholder="Email"><input id="phone" required placeholder="Phone Number"><select id="product"><option value="">Select product</option><option>Electronics & Gadgets</option><option>Textiles & Garments</option><option>Machinery & Equipment</option><option>Agro & Food Products</option><option>Home & Lifestyle</option><option>Other</option></select><textarea id="message" required placeholder="Tell us your product / requirement, quantity and destination"></textarea><button type="submit">Submit Enquiry →</button></div></form>
 </div></div></section>
 
@@ -69,14 +69,14 @@ footer{background:#041222;color:#b8c7d6;padding:32px 0}.foot{display:flex;justif
 </main>
 
 <footer><div class="container"><div class="foot"><div><b>AADI LOGISTICS</b><br><small>Global Import & Export Solutions • ALL INDIA</small></div><div>Harola, Sector 5, Noida<br>9798602070</div></div><div class="copyright">© 2026 AADI LOGISTICS. All rights reserved. • Website created for business presentation.</div></div></footer>
-<a class="floatwa" href="https://wa.me/9798602070">💬 WhatsApp</a>
+<a class="floatwa" href="https://api.whatsapp.com/send?phone=919798602070">💬 WhatsApp</a>
 <script>
 function fill(product){document.getElementById('product').value=product;document.getElementById('message').focus();location.hash='contact'}
 function sendEnquiry(e){
  e.preventDefault();
  const n=document.getElementById('name').value, p=document.getElementById('product').value||'General enquiry', m=document.getElementById('message').value;
  const text=`Hello AADI LOGISTICS,%0A%0AName: ${encodeURIComponent(n)}%0AProduct: ${encodeURIComponent(p)}%0ARequirement: ${encodeURIComponent(m)}%0A%0APlease share quotation and details.`;
- window.open(`https://wa.me/9798602070?text=${text}`,'_blank');
+ window.open(`https://api.whatsapp.com/send?phone=919798602070?text=${text}`,'_blank');
 }
 </script>
 </body>
